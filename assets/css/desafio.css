@@ -302,7 +302,7 @@ ul {
         font-weight: 50px;
         font-size: 80px;
         padding: 0 1rem;
-        margin: 0 2rem;
+       /* margin: 0 2rem; */
     }
     #men1::after, #men2::after, #men3::after {
         display: none;
