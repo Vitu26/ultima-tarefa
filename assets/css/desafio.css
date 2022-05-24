@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    background: #fff;
+    font-family:'Roboto', sans-serif !important;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    border: none;
+    gap: 100px;
+    background-color: #9ed59c;
+    border-bottom: 1px solid #ccc;
+
+}
+/* .menu {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    color: #3d656b;
+}
+.menu a {
+    text-decoration: none;
+    color: #3d656b;
+    transition: all 0.3s;
+}
+.menu a:hover {
+    color: #42352d;
+} */
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+#menu a {
+    text-decoration: none;
+    color: #3d656b;
+    transition: all 0.3s;
+}
+#menu a:hover {
+    color: #42352d;
+
+}
+
+#men1, #men2, #men3, #men4 {
+    position: relative;
+}
+#men1::after, #men2::after, #men3::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100% ;
+    position: absolute;
+    background-color: #fff;
+    right: -15px;
+    top: 0;
+}
+#btn-mobile{
+    display: none;
+}
+.logo {
+    height: 120px;
+}
+.pai {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    gap: 100px;
+}
+#son1 {
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 100px;
+    
+}
+.formu {
+    width: 500px;
+    margin: 50px auto 0;
+}
+.formu label {
+    display: block;
+    margin-top: 25px;
+}
+#fieldform{
+    background: #3d656b;
+    border-radius: 30px;
+    padding: 30px;
+    border: 0;
+    -webkit-box-shadow: 3px 3px 15px -5px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 3px 3px 15px -5px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 15px -5px rgb(0 0 0 / 75%);
+    margin-left: 30px;
+}
+#fieldform input[type=text]::placeholder,
+#fieldform input[type=email]::placeholder {
+    font-size: 16px;
+    text-align: center;
+    color: #9ed59c;
+    text-align: left;
+    
+}
+#titform {
+    text-align: left;
+    font-size: 32px;
+    color: #9ed59c;
+}
+#nome, #mail {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #3d656b;
+    border: 1px solid #f5d985;
+    color: #fff;
+    padding: 10px;
+    outline: 0;
+
+}
+#nome {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+#mail{
+    margin-top: 25px;
+}
+#btn {
+    height: 100px;
+    width: 100%;
+    background-color:  #9ed59c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    
+}
+#btn:hover {
+    background-color: #42352d;;
+}
+
+#son2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+#titulobrogo {
+    text-align: center;
+    font-size: 65px;
+    padding: 15px;
+    color: #3d656b;
+}
+#son2para {
+    text-align: center;
+    font-size: 25px;
+    color: #9ed59c;
+}
+
+#son2para span {
+    display: block;
+}
+
+#brogo {
+    height: 600px;
+}
+.rodape {
+    background-color: #fff(160, 160, 160);
+    padding: 100px;
+    border: none;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+.rodape i {
+    font-size: 34px;
+    margin-right: 35px;
+    color: #3d656b;
+    transition: all 0.3s;
+
+}
+.rodape i:hover {
+    color: #42352d;
+}
+.rodape a:last-of-type i {
+    margin-right: 0;
+}
+
+@media (max-width: 1200px) {
+    * {
+        gap: 0 !important;
+    }
+
+    main {
+        padding: 0 15px;
+        width: 100%;
+    }
+    .logo{
+        align-self: initial;
+    }
+
+    #brogo {
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
+    .rodape {
+        padding: 0px 0 50px 0;
+    }
+
+    #men1, #men2, #men3, #men4 {
+        margin-right: 24px;
+    }
+
+    .formu {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #son1 {
+        margin-top: -130px;
+        padding: 0px;
+    }
+
+    .pai {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    }  
+   
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+
+    }
+    #imgmenu {
+        padding-left: 200px;
+        height: 40px;
+    }
+    #nav.active #imgmenu {
+        background-image: url(x.png)
+    }
+    
+    #menu {
+        align-self: initial;
+        display: block; 
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: #9ed59c;
+        height: 0px;
+        transition: 0.6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(190vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .menu a {
+        align-items: center;
+        font-weight: 50px;
+        font-size: 80px;
+        padding: 0 1rem;
+        margin: 0 2rem;
+    }
+    #men1::after, #men2::after, #men3::after {
+        display: none;
+    }
+    .ul {
+        font-size: 150px;
+        padding-bottom: 50px;
+        
+    }
+    .tracos{
+        display: block;
+        border-top: 2px solid;
+        width: 30px;
+    }
+    .tracos::after, .tracos::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 7px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active .tracos {
+        border-top: none;
+    }
+    #nav.active .tracos::before{
+        transform: rotate(135deg);
+    }
+    #nav.active .tracos::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
